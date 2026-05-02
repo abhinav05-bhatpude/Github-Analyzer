@@ -14,11 +14,12 @@ searchBtn.addEventListener("click", async () => {
 
   const res = await fetch(`https://api.github.com/users/${username}`);
   const data = await res.json();
+  const repoRes = await fetch(`https://api.github.com/users/${username}/repos`);
+  const repos=await repoRes.json()
 
-  console.log(data);
+  
 
   result.innerHTML=`
- 
   <img src="${data.avatar_url}" width="90">
   <h3>${data.name || data.login}</h3>
   <p>${data.bio || "No bio available"}</p>
