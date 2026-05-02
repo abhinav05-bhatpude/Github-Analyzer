@@ -28,4 +28,11 @@ searchBtn.addEventListener("click", async () => {
   <p>Public Repos : ${data.public_repos}</p>
   <p><a href="${data.html_url}" target="_blank">View Profile</a></p>
   `;
+
+  const topRepos=repos.slice(0,3).map(repo=>`<li>${repo.name}</li>`).join("");
+
+  result.innerHTML +=`
+  <h4>Top Repositories:</h4>
+  <ul>${topRepos}</ul>
+  `
 });
