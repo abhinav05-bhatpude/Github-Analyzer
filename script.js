@@ -17,6 +17,10 @@ searchBtn.addEventListener("click", async () => {
   const repoRes = await fetch(`https://api.github.com/users/${username}/repos`);
   const repos=await repoRes.json()
 
+  if(repos.length===0){
+    result.innerHTML += "<p>No repositories found</p>"
+  }
+
   
 
   result.innerHTML=`
