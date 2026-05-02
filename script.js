@@ -5,6 +5,11 @@ const result = document.getElementById("result");
 searchBtn.addEventListener("click", async () => {
   const username = usernameInput.value;
 
+  if(!username){
+    result.innerText="Please enter a username ❌";
+    return
+  }
+
   result.innerHTML="<p>Loading user data...</p>"
 
   const res = await fetch(`https://api.github.com/users/${username}`);
