@@ -17,5 +17,6 @@ searchBtn.addEventListener("click", async () => {
   <p>Followers : ${data.followers}</p>
   <p>Following: ${data.following}</p>
   <p>Public Repos : ${data.public_repos}</p>
+  <p><a href="${data.html_url}" target="_blank">View Profile</a></p>
   `;
 });
