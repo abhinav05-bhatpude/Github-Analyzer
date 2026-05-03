@@ -53,3 +53,9 @@ button:hover{
     color:#3b82f6;
     text-decoration: none;
 }
+.card{
+    background: #020617;
+    padding:15px;
+    border-radius: 10px;
+    text-align: center;
+}
