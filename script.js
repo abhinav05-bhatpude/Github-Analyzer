@@ -24,6 +24,7 @@ searchBtn.addEventListener("click", async () => {
   
 
   result.innerHTML=`
+  <div class="card">
   <img src="${data.avatar_url}" width="90">
   <h3>${data.name || data.login}</h3>
   <p>${data.bio || "No bio available"}</p>
@@ -31,6 +32,7 @@ searchBtn.addEventListener("click", async () => {
   <p>Following: ${data.following}</p>
   <p>Public Repos : ${data.public_repos}</p>
   <p><a href="${data.html_url}" target="_blank">View Profile</a></p>
+  </div>
   `;
 
   const topRepos=repos.slice(0,3).map(repo=>`<li>${repo.name}</li>`).join("");
