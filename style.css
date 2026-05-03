@@ -1,83 +1,134 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Segoe UI',sans-serif;
-    background: #0f172a;
-    color:#e2e8f0;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    height:100vh;
-}
-.container{
-    background: #1e293b;
-    padding:20px;
-    border-radius: 10px;
-    width:300px;
-    display:flex;
-    flex-direction: column;
-    gap:12px
-}
-Input{
-    background: #1e293b;
-    border-radius: 6px;
-    border:1px solid #334155;
-    background: #020617;
-    color:white;
-}
-button{
-    padding:10px;
-    border-radius: 6px;
-    border:none;
-    background: #3b82f6;
-    color:white;
-    cursor:pointer;
-}
-button:hover{
-    background: #2563eb;
-}
-#result{
-    margin-top:10px;
-    font-size: 14px;
-    text-align: center;
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-#result img{
-    border-radius:50%;
-    margin-bottom:10px;
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
-#result a{
-    color:#3b82f6;
-    text-decoration: none;
+
+/* Container */
+.container {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
 }
-.card{
-    background: #020617;
-    padding:15px;
-    border-radius: 10px;
-    text-align: center;
+
+/* Input */
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #334155;
+
+  background: #020617;
+  color: white;
+
+  font-size: 14px;
+  outline: none;
 }
-.card h2{
-    margin:8px 0;
+
+/* Input focus */
+input:focus {
+  border-color: #3b82f6;
 }
-.card p{
-    font-size:14px;
+
+/* Button */
+button {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+
+  background: #3b82f6;
+  color: white;
+
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.2s;
 }
-.avatar{
-    width:80px;
-    border-radius: 50%;
-    margin-bottom:10px
+
+/* Hover */
+button:hover {
+  background: #2563eb;
 }
-ul{
-    list-style:none;
-    padding:0;
+
+/* Result */
+#result {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
 }
-.card:hover{
-    transform:scale(1.02);
-    transition:0.2s;
+
+/* Card */
+.card {
+  background: #020617;
+  padding: 16px;
+  border-radius: 10px;
+  text-align: center;
+
+  transition: 0.2s;
 }
-button{
-    font-weight:bold;
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.03);
+}
+
+/* Avatar */
+.avatar {
+  width: 80px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Text */
+.card h2 {
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #cbd5f5;
+}
+
+/* Links */
+#result a {
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#result a:hover {
+  text-decoration: underline;
+}
+
+/* Repo list */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul li {
+  background: #1e293b;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 5px;
+  font-size: 13px;
 }
