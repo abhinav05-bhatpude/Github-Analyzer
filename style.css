@@ -74,3 +74,7 @@ ul{
     list-style:none;
     padding:0;
 }
+.card:hover{
+    transform:scale(1.02);
+    transition:0.2s;
+}
