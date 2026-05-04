@@ -12,7 +12,7 @@ searchBtn.addEventListener("click", async () => {
 
   searchBtn.disabled = true;
   searchBtn.innerText = "Loading...";
-  result.innerHTML = "<p>Loading user data...</p>";
+  result.innerHTML = "<p>Fetching user data...</p>";
 
   try {
     const res = await fetch(`https://api.github.com/users/${username}`);
