@@ -83,6 +83,7 @@ button:hover {
   text-align: center;
 
   transition: 0.2s;
+  animation:fadeIn 0.3s ease;
 }
 
 /* Hover effect */
@@ -131,4 +132,15 @@ ul li {
   border-radius: 6px;
   margin-top: 5px;
   font-size: 13px;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(10px);
+  }
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
 }
