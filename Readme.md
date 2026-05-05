@@ -23,9 +23,7 @@ This project fetches GitHub user data using JavaScript and displays it in a clea
 
 ---
 
-## ▶️ How to Use
-1. Enter GitHub username
-2. Click Search
-3. View results
-
----
+## ⚙️ How It Works
+- User enters username
+- API fetches data from GitHub
+- Data is processed and displayed dynamically
