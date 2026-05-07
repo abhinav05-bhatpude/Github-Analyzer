@@ -102,7 +102,7 @@ button:hover {
     5px 5px 15px rgba(0,0,0,0.5),
     -2px -2px 10px rgba(255,255,255,0.05);
 
-  animation: fadeIn 0.4s ease;
+  animation:fadeIn 0.4s ease;
 }
 
 /* Avatar */
@@ -159,7 +159,7 @@ ul li:hover {
   }
 }
 
-/*Resoinnsive ness*/
+/*Responsiveness*/
 @media (max-width:600px){
   .container{
     width:90%;
@@ -170,6 +170,6 @@ ul li:hover {
   }
   button{
     width:100%;
-    
+
   }
 }
