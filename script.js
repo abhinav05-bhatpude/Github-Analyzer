@@ -40,7 +40,11 @@ searchBtn.addEventListener("click", async () => {
     if (repos.length === 0) {
       result.innerHTML += "<p>No repositories found</p>";
     } else {
-      const topRepos = repos.slice(0, 3).map(repo => `<li>${repo.name}</li>`).join("");
+      const topRepos = repos.slice(0, 3).map(repo => `<li>
+        <a href=$"{repo.html_url}" target="_blank">
+        ${repo.name}
+        </a>
+        </li>`).join("");
       result.innerHTML += `
         <h4>Top Repositories:</h4>
         <ul>${topRepos}</ul>
