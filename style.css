@@ -158,3 +158,18 @@ ul li:hover {
     transform: translateY(0);
   }
 }
+
+/*Resoinnsive ness*/
+@media (max-width:600px){
+  .container{
+    width:90%;
+    padding:20px;
+  }
+  .search-box{
+    flex-direction: column;
+  }
+  button{
+    width:100%;
+    
+  }
+}
