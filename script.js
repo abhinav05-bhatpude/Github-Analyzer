@@ -30,6 +30,7 @@ searchBtn.addEventListener("click", async () => {
         <img src="${data.avatar_url}" class="avatar">
         <h3>${data.name || data.login}</h3>
         <p>${data.bio || "No bio available"}</p>
+        <p>Joined : ${new Date(data.created_at).getFullYear()}</p>
         <p>Followers: ${data.followers}</p>
         <p>Following: ${data.following}</p>
         <p>Public Repos: ${data.public_repos}</p>
@@ -44,7 +45,8 @@ searchBtn.addEventListener("click", async () => {
         <a href=$"{repo.html_url}" target="_blank">
         ${repo.name}
         </a>
-        </li>`).join("");
+        </li>
+        `).join("");
       result.innerHTML += `
         <h4>Top Repositories:</h4>
         <ul>${topRepos}</ul>
